@@ -1,0 +1,133 @@
+/* The word goes outside the mission container */
+/* check home container when smaller screen size */
+.home_container {
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 30px;
+    border: 1px solid  rgb(0, 120, 232);
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.data_container {
+    border: 1rem solid black;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    /* align-items: left; */
+    text-align: left;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.btn_container {
+    border: 1rem solid black;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    background-color: white;
+    align-items: center;
+}
+
+/* MISSION CONTAINER */
+/* .mission_container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 10px;
+} 
+*/
+.mission_container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%; /* Ensure the container fits within the parent */
+    max-width: 100%; /* Prevent the container from exceeding the parent width */
+    box-sizing: border-box;
+    word-wrap: break-word; /* Allows long words to break */
+    overflow-wrap: break-word; /* Ensures wrapping of text */
+}
+
+.mission_container summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow: visible; /* Ensure all content is visible */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.mission_container summary::marker {
+    content: "";
+}
+
+.mission_container summary::before {
+    content: "▶";
+    margin-right: 0.5em;
+    transition: transform 0.2s;
+}
+
+.mission_container[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.addTask_btn {
+    margin-right: auto;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Add a background color */
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none; /* Ensure no outline when clicked */
+    border-radius: 5px; /* Optional, for rounded corners */
+}
+
+.done_button {
+    text-align: left;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+    /* text-decoration: line-through; */
+}
+
+.done_button_active {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
+    text-decoration: line-through;
+}

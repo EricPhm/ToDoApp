@@ -1,0 +1,27 @@
+install axios to request and response
+    npm i axios
+
+
+install react router dom 
+    npm i react-router-dom
+
+
+npm install redux react-redux
+
+
+rfce -> create a component
+
+
+npm install @reduxjs/toolkit 
+-> instead of using create store, now people using configureStore
+
+
+ <Provider> store={store} 
+ -> store is props
+
+
+ <ItemContainer cake/> 
+ -> send props to the component
+
+
+use Redux to store login status 
